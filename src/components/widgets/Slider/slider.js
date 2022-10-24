@@ -1,4 +1,5 @@
 import React from "react";
+import Arrows from "./components/controls/arrow";
 import SlidesList from "./components/slideList";
 
 import "./styles.scss";
@@ -9,14 +10,8 @@ const Slider = () => {
 
   return (
     <div style={{ width, height }} className="slider">
-      <div className="arrows">
-        <div className="arrow left" />
-        <div className="arrow right" />
-      </div>
-
-      <div className="slide-list">
-        <SlidesList></SlidesList>
-      </div>
+      <Arrows></Arrows>
+      <SlidesList></SlidesList>
     </div>
   );
 };
