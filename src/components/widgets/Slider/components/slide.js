@@ -4,11 +4,11 @@ import SlideImage from "./slideImage";
 
 import "./../styles.scss";
 
-export default function Slide() {
+export default function Slide({ url }) {
   return (
     <div className="slide">
-      <SlideImage />
-      <SlideTitle title="Title New" />
+      <SlideImage src={url} />
+      <SlideTitle title="TBD" />
     </div>
   );
 }

@@ -32,11 +32,11 @@ const getFlickrImageURL = (photo, size) => {
   return url;
 };
 
-export const getImages = (length = 10) => {
-  return fetch(url)
+export const getImages = async (length = 10) => {
+  const images = [];
+  await fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const images = [];
       //   const title = c?.description;
       //   const url = c?.image?.url;
 
@@ -46,4 +46,5 @@ export const getImages = (length = 10) => {
         return images.push(getFlickrImageURL(photo, "q"));
       });
     });
+  return images;
 };
