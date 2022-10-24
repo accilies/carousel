@@ -1,7 +1,5 @@
 import React from "react";
-import SlideImage from "./slideImage";
-import SlidesList from "./slideList";
-import SlideTitle from "./slideTitle";
+import SlidesList from "./components/slideList";
 
 import "./styles.scss";
 

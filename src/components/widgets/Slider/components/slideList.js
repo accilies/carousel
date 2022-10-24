@@ -2,7 +2,7 @@ import React from "react";
 import Slide from "./slide";
 import SlideImage from "./slideImage";
 
-import "./styles.scss";
+import "./../styles.scss";
 
 export default function SlidesList() {
   return (
