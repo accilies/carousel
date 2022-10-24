@@ -1,4 +1,7 @@
 import React from "react";
+import SlideImage from "./slideImage";
+import SlidesList from "./slideList";
+import SlideTitle from "./slideTitle";
 
 import "./styles.scss";
 
@@ -14,23 +17,7 @@ const Slider = () => {
       </div>
 
       <div className="slide-list">
-        <div className="slide">
-          <img
-            src="https://cdn.pixabay.com/photo/2014/06/03/19/38/board-361516__340.jpg"
-            alt="Alt Text"
-            className="slide-image"
-          />
-          <div className="slide-title">Title</div>
-        </div>
-
-        <div className="slide">
-          <img
-            src="https://cdn.pixabay.com/photo/2014/06/03/19/38/board-361516__340.jpg"
-            alt="Alt Text"
-            className="slide-image"
-          />
-          <div className="slide-title">Title</div>
-        </div>
+        <SlidesList></SlidesList>
       </div>
     </div>
   );
